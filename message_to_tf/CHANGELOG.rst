@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package message_to_tf
+Changelog for package hector_message_to_tf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.3.0 (2016-06-27)
@@ -28,7 +28,7 @@ Changelog for package message_to_tf
 
 0.1.3 (2014-07-09)
 ------------------
-* message_to_tf: fixed base_link transform publishing (was removed in 77f2cc2334d15fc0e9395ceb9b40cd4601448289)
+* hector_message_to_tf: fixed base_link transform publishing (was removed in 77f2cc2334d15fc0e9395ceb9b40cd4601448289)
 * Contributors: Johannes Meyer
 
 0.1.2 (2014-06-02)

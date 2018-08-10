@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(message_to_tf)
+project(hector_message_to_tf)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -56,16 +56,16 @@ catkin_package(
 # include_directories(include)
 include_directories(${catkin_INCLUDE_DIRS})
 
-add_executable(message_to_tf
-  src/message_to_tf.cpp
+add_executable(hector_message_to_tf
+  src/hector_message_to_tf.cpp
 )
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(message_to_tf hector_worldmodel_msgs_generate_messages_cpp)
+# add_dependencies(hector_message_to_tf hector_worldmodel_msgs_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(message_to_tf
+target_link_libraries(hector_message_to_tf
   ${catkin_LIBRARIES}
 )
 
@@ -77,7 +77,7 @@ target_link_libraries(message_to_tf
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
 ## Mark executables and/or libraries for installation
-install(TARGETS message_to_tf
+install(TARGETS hector_message_to_tf
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

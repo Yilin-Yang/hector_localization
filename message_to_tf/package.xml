@@ -1,9 +1,11 @@
 <package>
-  <name>message_to_tf</name>
+  <name>hector_message_to_tf</name>
   <version>0.3.0</version>
   <description>
-    message_to_tf translates pose information from different kind of common_msgs message types to tf. Currently the node supports nav_msgs/Odometry, geometry_msgs/PoseStamped and sensor_msgs/Imu messages as input.
+    hector_message_to_tf translates pose information from different kind of common_msgs message types to tf. Currently the node supports nav_msgs/Odometry, geometry_msgs/PoseStamped and sensor_msgs/Imu messages as input.
     The resulting transform is divided into three subtransforms with intermediate frames for the footprint and the stabilized base frame (without roll and pitch).
+
+    NOTE: this package is actually named 'message_to_tf', but it's been renamed to prevent name collisions with other metapackages.
   </description>
   <maintainer email="meyer@fsr.tu-darmstadt.de">Johannes Meyer</maintainer>
 

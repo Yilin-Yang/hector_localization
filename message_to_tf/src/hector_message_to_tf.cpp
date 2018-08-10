@@ -201,11 +201,11 @@ void multiCallback(topic_tools::ShapeShifter const &input) {
     return;
   }
 
-  ROS_ERROR_THROTTLE(1.0, "message_to_tf received a %s message. Supported message types: nav_msgs/Odometry geometry_msgs/PoseStamped geometry_msgs/TransformStamped sensor_msgs/Imu", input.getDataType().c_str());
+  ROS_ERROR_THROTTLE(1.0, "hector_message_to_tf received a %s message. Supported message types: nav_msgs/Odometry geometry_msgs/PoseStamped geometry_msgs/TransformStamped sensor_msgs/Imu", input.getDataType().c_str());
 }
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "message_to_tf");
+  ros::init(argc, argv, "hector_message_to_tf");
 
   g_footprint_frame_id = "base_footprint";
   g_stabilized_frame_id = "base_stabilized";
@@ -258,7 +258,7 @@ int main(int argc, char** argv) {
   }
 
   if (subscribers == 0) {
-    ROS_FATAL("Usage: rosrun message_to_tf message_to_tf <topic>");
+    ROS_FATAL("Usage: rosrun hector_message_to_tf hector_message_to_tf <topic>");
     return 1;
   } else if (subscribers > 1) {
     ROS_FATAL("More than one of the parameters odometry_topic, pose_topic, imu_topic and topic are set.\n"
