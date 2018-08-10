@@ -89,8 +89,8 @@ message(STATUS "CMAKE_CXX_FLAGS_DEBUG:          ${CMAKE_CXX_FLAGS_DEBUG}")
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-include_directories(
-  include
+include_directories(include)
+include_directories(SYSTEM
   ${CATKIN_DEVEL_PREFIX}/include
   ${catkin_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
